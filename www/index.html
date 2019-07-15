@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sat Track</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="/js/socketio.js"></script>
+</head>
+
+<body>
+    <div id='map' style='width: 100vw; height: 100vh;'></div>
+    <div id=overlay>
+        <div id="timeseek">
+            <div class="btn left-btn" id="playBtn">
+                <img id="playBtnImg" src="/img/pause.png" alt="">
+            </div>
+            <div class="btn" id="nowBtn">
+                <img src="/img/now.png" alt="">
+            </div>
+            <span id="timeTip">now</span>
+            <div id="seeker">
+                <input id="seek" type="range" max="0" min="0" step="1" value="0">
+            </div>
+            <div class="btn" id="filterBtn" onclick="filters()">
+                <img src="/img/filter.png" alt="">
+            </div>
+            <div class="btn right-btn" id="fullBtn" onclick="fullscreen()">
+                <img src="/img/full.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="/js/bundle.js"></script>
+</body>
+
+</html>
