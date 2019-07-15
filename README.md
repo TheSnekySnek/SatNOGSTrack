@@ -2,6 +2,8 @@
 
 Displays the observations of the SatNOGS network in real-time
 
+![Demo](https://i.gyazo.com/5ee848668ee7597455832e112cd364de.gif)
+
 ## Getting Started
 
  - Clone this repository 
